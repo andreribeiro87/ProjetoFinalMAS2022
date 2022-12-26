@@ -54,7 +54,7 @@ body {
 
 .imgbtn {
     background-color: #BBBFCA !important;
-    background-image: url('magnifying-glass-solid.svg') !important;
+    background-image: url('../../images/magnifying-glass-solid.svg') !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
     background-size: 75% 75% !important;
