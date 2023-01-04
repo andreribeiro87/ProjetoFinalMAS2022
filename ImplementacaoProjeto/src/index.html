@@ -7,9 +7,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="../lib/css/findIt.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!-- Bootstrap CSS v5.2.1 -->
@@ -41,7 +41,7 @@
     button {
       border: 0 !important;
       background-color: transparent !important;
-      background-color: brown;
+      ;
     }
   </style>
 
@@ -54,23 +54,23 @@
     <nav class="navbar navbar-expand-sm navbar-light nv mb-2">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="logotipo" src="../images/logoFindIt.png"></a>
-        <button class="navbar-toggler d-lg-none btn btn-primary" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-transparent d-lg-none btn btn-primary" type="button" id="liveToastBtn"
+          data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar navbar-expand-sm navbar-light nv mb-2">
             <!-- <li class="nav-item "> -->
-            <a class="nav-link active" href="#" aria-current="page">
+            <a class="nav-link active" href="listadeprodutos.html" aria-current="page">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                 class="bi bi-shop-window " viewBox="0 0 16 20">
                 <path
                   d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
               </svg> Produtos<span class="visually-hidden">(current)</span>
             </a>
-            <a class="nav-link active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                fill="currentColor" class="bi bi-bag" viewBox="0 0 16 20">
+            <a class="nav-link active" href="listadecompras.html"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 20">
                 <path
                   d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
               </svg> Lista de compras</a>
@@ -95,16 +95,12 @@
       <form class="d-flex my-2 my-lg-0 ui-widget">
         <input class="col-10 me-1 border rounded-5 border-light" type="text" autocomplete="on" id="tags"
           placeholder="     Search">
-        <button id="btn-srch" alt="Search" class="col-2  my-0 border border-light border-3 text-bg-light"><svg
-            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-            viewBox="0 0 16 16">
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-          </svg></button>
+        <input type="button" class="text-light " id="btn-srch" value="FindIt">
+
 
       </form>
     </div>
-    <div class="row d-none mt-1 mb-3 pd" id="nameprod">
+    <div class="row mt-1 d-none mb-3 pd" id="nameprod">
       <div class="col-9 mt-2" id="prodPriceZone"></div>
       <div class="col-3 mt-1"><button class="btn btn-primary" id="add">Adiciona</button></div>
       <div class="col-12 mt-2" id="prodImgZone"></div>
@@ -113,8 +109,49 @@
     </div>
 
   </div>
+  <div class="toast-container p-3 bottom-0 end-0 " id="teste">
+    <div class="toast show" id="liveToast">
+      <div class="toast-header">
+        <img src="../images/logoFindIt.png" width="100" height="50" class="rounded me-2" alt="logo FindIt">
+        <strong class="me-auto"></strong>
+        <small>just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body d-flex justify-content-between">
+        <span>És um admistrador?</span>
+        <div class="btn-group dropup">
+          <button class="btn btn-primary bg-primary rounded-2 btn-sm dropdown-toggle" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside" data-bs-offset="10,75">
+            Sim!
+          </button>
+          <div class="dropdown-menu bg-transparent border-0">
+            <div>
+              <div class="form-floating mb-2">
+                <input class="form-control" id="Name">
+                <label for="Name">Username</label>
+                <div id="NameFeedback" class="invalid-feedback">
+                  Invalid Name
+                </div>
+              </div>
+              <div class="form-floating mb-2">
+                <input type="password" class="form-control" id="Password">
+                <label for="Password">Password</label>
+                <div id="PasswordFeedback" class="invalid-feedback">
+                  Incorret Password
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button style="background-color: #495464 !important;"
+                  class=" text-light btn btn-outline-primary rounded-2 w-100" id="btn"><i class="fa fa-paper-plane-o"
+                    aria-hidden="true"></i> Loggin!</button>
+              </div>
 
-
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--carousel das promos-->
   <div id="carouselId" class="carousel slide mt-3" data-bs-ride="carousel">
     <ol class="carousel-indicators">
@@ -151,12 +188,12 @@
 
   <!-- Bootstrap JavaScript Libraries -->
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
   <script src="../lib/js/bootstrap.min.js"></script>
   <script src="../lib/js/jquery-3.6.0.js"></script>
   <script src="../lib/js/jquery-ui.js"></script>
-
-
   <script>
 
     $(document).ready(function () {
@@ -220,6 +257,7 @@
         source: availableTagsAC
       });
       const comprar = {}
+
       $('#btn-srch').click(function () {
         var produto = $("#tags").val();
         quantidade = 1;
@@ -232,8 +270,7 @@
         // $('.nana').html("\nimport turtle\n\n\n\n\ndef draw_map():\n\n    data = 'UP;-150 25;CIRCLE_START;-100 200;FILL_START;-100 200;-100 50;-150 50;-150 200;FILL_END;-50 200;FILL_START;0 200;0 50;-50 50;-50 200;FILL_END;50 200;FILL_START;100 200;100 50;50 50;50 200;FILL_END;-150 0;FILL_START;-100 0;-100 -150;-150 -150;-150 0;FILL_END;-50 0;FILL_START;0 0;0 -150;-50 -150;-50 0;FILL_END;50 0;FILL_START;100 0;100 -150;50 -150;50 0;FILL_END;100 25;CIRCLE_START'\n\n    t.speed(200)\n\n    for a in data.split(';'):\n        \n        t.pencolor('black')\n\n        if a == 'UP':\n            t.up()\n        elif a == 'CIRCLE_START':\n            t.pencolor('red')\n            t.dot(20)\n        # elif a == 'CIRCLE_WAYPOINT':\n        #     t.pencolor('white')\n        #     t.dot(20)\n        elif a == 'FILL_START':\n            t.begin_fill()\n        elif a == 'FILL_END':\n            t.end_fill()\n            # elif a[0]=='SECTION':\n            #     t.pencolor('black')\n            #     # t.write(\"seccao\",align='center',font=('Arial', 16, 'normal'))\n        else:\n\n            i = a.split(' ')\n            t.goto(int(i[0]), int(i[1]))\n\n\ndef draw_products(lista_locais):\n    t.speed(20)\n    for item in compras:\n        for code in produtos:\n            if item == code:\n                local_x = produtos[code][4]\n                local_y = produtos[code][5]\n                t.goto(local_x, local_y)\n                t.pencolor('blue')\n                t.dot(15)\n                lista_locais.append((local_x, local_y))\n    return lista_locais\n\n\ndef draw_line(lista_locais):\n    # a lista -125 tem elementos ? se sim qual deles está mais proximo, e agora qual existem mais algum elemento na lista se sim, qual está mais proximo, se nao vai para o way point, repete\n    t.speed(20)\n     \n    waypoint = {}\n    waypoint[-150] = {local[1] for local in lista_locais if local[0] == -150}\n    waypoint[-100] = {local[1] for local in lista_locais if local[0] == -100}\n    waypoint[-50] = {local[1] for local in lista_locais if local[0] == -50}\n    waypoint[0] = {local[1] for local in lista_locais if local[0] == 0}\n    waypoint[50] = {local[1] for local in lista_locais if local[0] == 50}\n    waypoint[100] = {local[1] for local in lista_locais if local[0] == 100}\n    waypoint[150] = {local[1] for local in lista_locais if local[0] == 150}\n\n    waypoint_sorted = dict(sorted(waypoint.items()))\n    \n    t.pensize(5)\n    t.goto(-150, 25)\n    t.down()\n    t.goto(-150, 25)\n\n    for local in waypoint_sorted:\n        if len(waypoint_sorted[local]) != 0:\n            t.goto(local, 25)\n\n            distancia_max = max(waypoint_sorted[local])\n            distancia_min = min(waypoint_sorted[local])\n\n            if distancia_max > 0:\n                t.goto(local, distancia_max)\n                t.goto(local, 25)\n            if distancia_min < 0:\n                t.goto(local, distancia_min)\n                t.goto(local, 25)\n\n\n\nprodutos = {   'p1': ('Ketchup', 'Mercearia Salgado', 1.59, 0.23, -150, 56),                                                \n    'p10': ('Leite 6x1L', 'Lacticinios', 4.92, 0.06, -50, 58),                                                   \n    'p11': ('Natas', 'Lacticinios', 0.79, 0.06, -50, 87),\n    'p12': ('Ovos', 'Lacticinios', 0.94, 0.06, -50, 110),\n    'p13': ('Espadarte Posta', 'Peixaria', 6.49, 0.06, -50, -140),\n    'p14': ('Queijo', 'Charcutaria', 3.89, 0.06, 0, -80),\n    'p15': ('Laranjas', 'Frutas e Legumes', 1.449, 0.06, 50, -40),\n    'p16': ('Ameixa Seca', 'Frutas e Legumes', 2.0, 0.06, 50, -70),\n    'p17': ('Tabuleiro', 'Casa', 7.0, 0.23, 100, -60),\n    'p18': ('Batatas', 'Frutas e Legumes', 17.0, 0.06, 50, -130),\n    'p19': ('Limpa Vidros', 'Limpeza', 3.69, 0.23, 100, 140),\n    'p2 ': ('Atum', 'Mercearia Salgado', 3.38, 0.06, -150, 80),\n    \"p20\": ('Oregaos', 'Mercearia Salgado', 1.42, 0.06, -150, 120),\n    'p21': ('Bolachas Maria', 'Mercearia Doce', 2.39, 0.23, -100, 140),\n    'p22': ('Pedras Salgadas', 'Bebidas', 2.46, 0.13, -150, -80),\n    'p23': ('Detergente Roupa', 'Limpeza', 12.99, 0.23, 100, 120),\n    'p24': ('Iogurte Grego', 'Lacticinios', 2.59, 0.06, -50, 130),\n    'p3': ('Cogumelos', 'Mercearia Salgado', 1.98, 0.23, -150, 95),\n    'p4': ('Bolachas Cacau', 'Mercearia Doce', 1.39, 0.23, -100, 60),\n    'p5': ('Cerelac', 'Mercearia Doce', 5.65, 0.06, -100, 100),\n    'p6': ('Heineken 12x25CL', 'Bebidas', 8.99, 0.23, -150, -130),\n    'p7': ('Gel Banho', 'Higiene', 5.99, 0.23, 100, 130),\n    'p8': ('Lencos de Bolso', 'Limpeza', 1.59, 0.23, 100, 60),\n    'p9': ('Jardineira', 'Congelados', 1.99, 0.06, -50, -70)}\n\n\n\n\n                    \n\n\n\ncompras =" + comp1 + "\n\n\nt = turtle.Turtle()\nlista_locais = []\nturtle.Screen().setup(360, 740)\n# turtle.screensize(canvwidth=360, canvheight=740)\n# t.speed(100)\ndraw_map()\ndraw_products(lista_locais)\ndraw_line(lista_locais)\n\n    \n\nturtle.Screen().exitonclick()\n");
         $("#nameprod").toggleClass("d-none");
         $('#prodPriceZone').text(produto);
-        $('#prodImgZone').append("<img src='Produtos/" + p + ".png' class=' col-12 prodImg' alt='Responsive image'>");
-        return comp1;
+        $('#prodImgZone').append("<img src='../images/" + p + ".png' class=' col-12 prodImg' alt='Responsive image'>");
       });
 
 
@@ -247,34 +284,51 @@
     });
 
   </script>
-  <!-- 
-{   
-'p1': ('Ketchup', 'Mercearia Salgado', 1.59),
-'p10': ('Leite 6x1L', 'Lacticinios', 4.92),
-'p11': ('Natas', 'Lacticinios', 0.79),
-'p12': ('Ovos', 'Lacticinios', 0.94),
-'p13': ('Espadarte Posta', 'Peixaria', 6.49), 
-'p14': ('Queijo', 'Charcutaria', 3.8),
-'p15': ('Laranjas', 'Frutas e Legumes', 1.49),
-'p16': ('Ameixa Seca', 'Frutas e Legumes', 2.0),
-'p17': ('Tabuleiro', 'Casa', 7.0),
-'p18': ('Batatas', 'Frutas e Legumes', 17.0),
-'p19': ('Limpa Vidros', 'Limpeza', 3.69),
-'p2 ': ('Atum', 'Mercearia Salgado', 3.38),
-"p20": ('Oregaos', 'Mercearia Salgado', 1.42), 
-'p21': ('Bolachas Maria', 'Mercearia Doce', 2.39), 
-'p22': ('Pedras Salgadas', 'Bebidas', 2.46), 
-'p23': ('Detergente Roupa', 'Limpeza', 12.99),
-'p24': ('Iogurte Grego', 'Lacticinios', 2.59),
-'p3': ('Cogumelos', 'Mercearia Salgado', 1.98),
-'p4': ('Bolachas Cacau', 'Mercearia Doce', 1.39),
-'p5': ('Cerelac', 'Mercearia Doce', 5.65), 
-'p6': ('Heineken 12x25CL', 'Bebidas', 8.99),
-'p7': ('Gel Banho', 'Higiene', 5.99),
-'p8': ('Lencos de Bolso', 'Limpeza', 1.59),
-'p9': ('Jardineira', 'Congelados', 1.99)}
--->
-  <!-- nas imagens falta jardineira natas heineken detergente roupa e pedras salgadas tabuleiro cogumelos gel de banho-->
+
+  <script>
+
+
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+
+  </script>
+  <script>
+    var Users = { 'violeta': 'andre', 'andre': 'violeta' }
+    var admin = false
+    $('#btn').click(function () {
+
+      Username()
+      console.log(admin)
+      if (admin) {
+        location.href = "adicionar.html"
+      }
+    })
+    function Password() {
+
+      if (!(($('#Name').val()) in Users && Users[($('#Name').val())] == ($('#Password').val()))) {
+        $('#Password').addClass('is-invalid')
+
+      }
+      else {
+        $('#Password').removeClass('is-invalid')
+        admin = true
+
+      }
+
+    }
+    function Username() {
+      if (($('#Name').val()).length < 5) { $('#Name').addClass('is-invalid'); Password() }
+      else { $('#Name').removeClass('is-invalid'); Password() }
+    }
+  </script>
+
 
 </body>
 
