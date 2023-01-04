@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>FindIt</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../lib/css/findIt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link href="fa.min.css" rel="stylesheet" /> -->
+    <link href="../lib/css/lineicons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500&family=Saira:wdth,wght@50,572&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <title>FindIt</title>
+    <!-- <link rel="icon" type="image/png" href="https://pythonsandbox.com/images/logo_python_no-text.png"> -->
+    <link href="../lib/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap & Other CSS -->
+    <link rel="stylesheet" href="../lib/css/jquery-ui.css">
+    <!-- <link media="all" type="text/css" rel="stylesheet" href="https://www.pythonsandbox.com/css/bootstrap.superhero.min.css"> -->
+    <!-- <link rel="stylesheet" href="../lib/css/bootstrap.superhero.min.css"> -->
+    <!-- <link media="all" type="text/css" rel="stylesheet" href="https://www.pythonsandbox.com/css/codemirror.css"> -->
+    <link media="all" type="text/css" rel="stylesheet" href="../lib/css/codemirror.css">
+    <!-- <link rel="stylesheet" href="./css/codemirror.css"> -->
+    <!-- <link media="all" type="text/css" rel="stylesheet" href="https://www.pythonsandbox.com/css/base16-dark.css"> -->
+    <link rel="stylesheet" href="../lib/css/base16-dark.css">
+    <!-- <link media="all" type="text/css" rel="stylesheet" href="https://www.pythonsandbox.com/css/sandbox.css"> -->
+    <link rel="stylesheet" href="../lib/css/sandbox.css">
+    <!-- Javascript -->
+    <script src="../lib/js/jquery1.9.min.js" type="text/javascript"></script>
+    <!-- <script src="https://www.pythonsandbox.com/js/codemirror-custom.js"></script> -->
+    <!-- <script src="https://www.pythonsandbox.com/js/skulpt.min.js"></script> -->
+    <!-- <script src="https://www.pythonsandbox.com/js/sandbox.js"></script> -->
+    <!-- <script src="https://www.pythonsandbox.com/js/codemirror-custom.js"></script> -->
+    <!-- <script src="https://www.pythonsandbox.com/js/skulpt-stdlib.js"></script> -->
+    <script src="../lib/js/codemirror-custom.js"></script>
+    <script src="../lib/js/skulpt.min.js"></script>
+    <script src="../lib/js/sandbox.js"></script>
+    <script src="../lib/js/codemirror-custom.js"></script>
+    <script src="../lib/js/skulpt-stdlib.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <style>
+        body {
+            background-color: rgb(210, 210, 210);
+        }
+
+        .altura {
+            height: 25vh;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Barra inicial -->
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-light nv mb-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logotipo" src="../images/logoFindIt.png"></a>
+                <button class="navbar-toggler d-lg-none btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar navbar-expand-sm navbar-light nv mb-2">
+                        <!-- <li class="nav-item "> -->
+                        <a class="nav-link active" href="#" aria-current="page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-shop-window " viewBox="0 0 16 20">
+                                <path
+                                    d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
+                            </svg> Produtos<span class="visually-hidden">(current)</span>
+                        </a>
+                        <a class="nav-link active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 20">
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg> Lista de compras</a>
+                        <a class="nav-link active" href="caminhoProdutos.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 20">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg> Caminho</a>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- Div de conteudo -->
+    <div class="container">
+        <div class="row">
+
+            <div data-bind="foreach: minhalista">
+                <div class="card mb-3" data-bind="attr:{id: 'card'+codigo}">
+                    <div class="row ">
+                        <div class="col-md-6 d-flex justify-content-center ">
+                            <img data-bind="attr:{src:'../images/'+codigo + '.png'}" src=""
+                                class="text-center img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 data-bind="text:nome" class="card-title">Card title</h5>
+                                <div data-bind="text:localizacao"></div>
+                                <div data-bind="text:preco"></div>
+                            </div>
+                            <div class="text-center mb-2 rounded-5">
+
+                                <button id="btnREMOVE" class="btn active"
+                                    data-bind="attr:{id:'btnREMOVE'+codigo},click:$parent.RemoveList.bind($data,codigo)"><i
+                                        class="fa fa-remove text-light"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <input type="text" id="tags" class="col-7 border  rounded-5 ps-4 " placeholder="Adicione ">
+                <button title="search" class="col-2  bt txtbtn " id="btn-add1" style="background-color: #495464;"><i
+                        class="fa fa-plus"></i></button>
+                <!-- <button class="btn btn-primary" id="btn-ht">change html</button> -->
+            </div>
+        </div>
+        <!-- Bootstrap JavaScript -->
+        <script src="../lib/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="../lib/js/jquery-3.6.0.js"></script>
+        <script src="../lib/js/jquery-ui.js"></script>
+        <script src="../lib/js/sandbox-saving.js"></script>
+        <!-- <script src="https://www.pythonsandbox.com/js/sandbox-saving.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"
+            integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="../lib/js/camProd.js"></script> -->
+        <script>
+            var myviewmodel = function () {
+                var self = this;
+                self.produtos = ko.observableArray([]);
+                self.names = ko.observableArray();
+                self.price = ko.observable();
+                self.locationX = ko.observable();
+                self.locationY = ko.observable();
+                self.prateleira = ko.observable();
+                self.nome = ko.observable();
+                self.minhalista = ko.observableArray()
+                $.ajax({
+                    async: false,
+                    dataType: "json",
+                    url: "prod.json",
+                    success: function (data) {
+                        // self.produtos(data.produto[10].nome);
+                        for (var i = 0; i < data.produto.length; i++) {
+                            (self.names).push(data.produto[i].nome);
+                        }
+                        self.produtos(data.produto)
+                    }
+                })
+                listaDic = localStorage.getItem("listadecompra1")
+                listaParsed = JSON.parse(listaDic)
+
+                self.JustonChart = function (data) {
+                    keys = Object.keys(data)
+                    console.log(Object.keys(data), 'pq nao')
+                    $.ajax({
+                        async: false,
+                        dataType: "json",
+                        url: "prod.json",
+                        success: function (data) {
+                            for (var i = 0; i < data.produto.length; i++) {
+                                for (var j = 0; j < keys.length; j++) {
+                                    if (data.produto[i].codigo == keys[j]) {
+                                        self.minhalista.push(data.produto[i])
+                                    }
+                                }
+                            }
+                            console.log(self.minhalista(), 'minha lista')
+                        }
+                    })
+                }
+
+
+                self.JustonChart(listaParsed)
+
+                self.removeCards = function (data) {
+                    var card = document.getElementById('card' + data)
+                    card.remove()
+                }
+
+
+                console.log(self.produtos());
+                var quantidade = 1;
+                console.log(comprar, 'não sei');
+
+                // var listaprod = { "listadecompra1": compra }
+                //
+                console.log(localStorage)
+
+                var comprar = {};
+                self.UpdateList = function (codigo) {
+                    // debugger
+                    if (localStorage.getItem('listadecompra1') == null) {
+                        comprar[codigo] = quantidade;
+                        localStorage.setItem('listadecompra1', JSON.stringify(comprar));
+                        console.log(localStorage, 'firstTime')
+                    } else {
+                        var coma = localStorage.getItem('listadecompra1')
+                        var uns = JSON.parse(coma)
+                        console.log(uns, 'uns')
+                        uns[codigo] = quantidade;
+
+                        console.log(uns, 'coma2')
+                        var newCompra = JSON.stringify(uns)
+                        localStorage.setItem('listadecompra1', newCompra);
+                        console.log(localStorage)
+                        // $('.nana').html("import turtle\n\n\n\n\ndef draw_map():\n\n\tdata = 'UP;-150 25;CIRCLE_START;-100 200;FILL_START;-100 200;-100 50;-150 50;-150 200;FILL_END;-50 200;FILL_START;0 200;0 50;-50 50;-50 200;FILL_END;50 200;FILL_START;100 200;100 50;50 50;50 200;FILL_END;-150 0;FILL_START;-100 0;-100 -150;-150 -150;-150 0;FILL_END;-50 0;FILL_START;0 0;0 -150;-50 -150;-50 0;FILL_END;50 0;FILL_START;100 0;100 -150;50 -150;50 0;FILL_END;100 25;CIRCLE_START'\n\n\tt.speed(200)\n\n\tfor a in data.split(';'):\n\t\t\n\t\tt.pencolor('black')\n\n\t\tif a == 'UP':\n\t\t\tt.up()\n\t\telif a == 'CIRCLE_START':\n\t\t\tt.pencolor('red')\n\t\t\tt.dot(20)\n\t\t# elif a == 'CIRCLE_WAYPOINT':\n\t\t#     t.pencolor('white')\n\t\t#     t.dot(20)\n\t\telif a == 'FILL_START':\n\t\t\tt.begin_fill()\n\t\telif a == 'FILL_END':\n\t\t\tt.end_fill()\n\t\t\t# elif a[0]=='SECTION':\n\t\t\t#     t.pencolor('black')\n\t\t\t#     # t.write(\"seccao\",align='center',font=('Arial', 16, 'normal'))\n\t\telse:\n\n\t\t\ti = a.split(' ')\n\t\t\tt.goto(int(i[0]), int(i[1]))\n\n\ndef draw_products(lista_locais):\n\tt.speed(20)\n\tfor item in compras:\n\t\tfor code in produtos:\n\t\t\tif item == code:\n\t\t\t\tlocal_x = produtos[code][4]\n\t\t\t\tlocal_y = produtos[code][5]\n\t\t\t\tt.goto(local_x, local_y)\n\t\t\t\tt.pencolor('blue')\n\t\t\t\tt.dot(15)\n\t\t\t\tlista_locais.append((local_x, local_y))\n\treturn lista_locais\n\n\ndef draw_line(lista_locais):\n\t# a lista -125 tem elementos ? se sim qual deles está mais proximo, e agora qual existem mais algum elemento na lista se sim, qual está mais proximo, se nao vai para o way point, repete\n\tt.speed(20)\n\t\t\n\twaypoint = {}\n\twaypoint[-150] = {local[1] for local in lista_locais if local[0] == -150}\n\twaypoint[-100] = {local[1] for local in lista_locais if local[0] == -100}\n\twaypoint[-50] = {local[1] for local in lista_locais if local[0] == -50}\n\twaypoint[0] = {local[1] for local in lista_locais if local[0] == 0}\n\twaypoint[50] = {local[1] for local in lista_locais if local[0] == 50}\n\twaypoint[100] = {local[1] for local in lista_locais if local[0] == 100}\n\twaypoint[150] = {local[1] for local in lista_locais if local[0] == 150}\n\n\twaypoint_sorted = dict(sorted(waypoint.items()))\n\t\n\tt.pensize(5)\n\tt.goto(-150, 25)\n\tt.down()\n\tt.goto(-150, 25)\n\n\tfor local in waypoint_sorted:\n\t\tif len(waypoint_sorted[local]) != 0:\n\t\t\tt.goto(local, 25)\n\n\t\t\tdistancia_max = max(waypoint_sorted[local])\n\t\t\tdistancia_min = min(waypoint_sorted[local])\n\n\t\t\tif distancia_max > 0:\n\t\t\t\tt.goto(local, distancia_max)\n\t\t\t\tt.goto(local, 25)\n\t\t\tif distancia_min < 0:\n\t\t\t\tt.goto(local, distancia_min)\n\t\t\t\tt.goto(local, 25)\n\n\n\nprodutos = {   'p1': ('Ketchup', 'Mercearia Salgado', 1.59, 0.23, -150, 56),                                                \n\t'p10': ('Leite 6x1L', 'Lacticinios', 4.92, 0.06, -50, 58),                                                   \n\t'p11': ('Natas', 'Lacticinios', 0.79, 0.06, -50, 87),\n\t'p12': ('Ovos', 'Lacticinios', 0.94, 0.06, -50, 110),\n\t'p13': ('Espadarte Posta', 'Peixaria', 6.49, 0.06, -50, -140),\n\t'p14': ('Queijo', 'Charcutaria', 3.89, 0.06, 0, -80),\n\t'p15': ('Laranjas', 'Frutas e Legumes', 1.449, 0.06, 50, -40),\n\t'p16': ('Ameixa Seca', 'Frutas e Legumes', 2.0, 0.06, 50, -70),\n\t'p17': ('Tabuleiro', 'Casa', 7.0, 0.23, 100, -60),\n\t'p18': ('Batatas', 'Frutas e Legumes', 17.0, 0.06, 50, -130),\n\t'p19': ('Limpa Vidros', 'Limpeza', 3.69, 0.23, 100, 140),\n\t'p2 ': ('Atum', 'Mercearia Salgado', 3.38, 0.06, -150, 80),\n\t\"p20\": ('Oregaos', 'Mercearia Salgado', 1.42, 0.06, -150, 120),\n\t'p21': ('Bolachas Maria', 'Mercearia Doce', 2.39, 0.23, -100, 140),\n\t'p22': ('Pedras Salgadas', 'Bebidas', 2.46, 0.13, -150, -80),\n\t'p23': ('Detergente Roupa', 'Limpeza', 12.99, 0.23, 100, 120),\n\t'p24': ('Iogurte Grego', 'Lacticinios', 2.59, 0.06, -50, 130),\n\t'p3': ('Cogumelos', 'Mercearia Salgado', 1.98, 0.23, -150, 95),\n\t'p4': ('Bolachas Cacau', 'Mercearia Doce', 1.39, 0.23, -100, 60),\n\t'p5': ('Cerelac', 'Mercearia Doce', 5.65, 0.06, -100, 100),\n\t'p6': ('Heineken 12x25CL', 'Bebidas', 8.99, 0.23, -150, -130),\n\t'p7': ('Gel Banho', 'Higiene', 5.99, 0.23, 100, 130),\n\t'p8': ('Lencos de Bolso', 'Limpeza', 1.59, 0.23, 100, 60),\n\t'p9': ('Jardineira', 'Congelados', 1.99, 0.06, -50, -70)}\n\n\n\n\n\t\t\t\t\t\n\n\n\ncompras =" + newCompra + "\n\n\nt = turtle.Turtle()\nlista_locais = []\n\nturtle.Screen().bgcolor('#BBBFCA')\n\n# t.speed(100)\ndraw_map()\ndraw_products(lista_locais)\ndraw_line(lista_locais)\n\n\t\n\nturtle.Screen().exitonclick()");
+                    }
+                    return coma;
+                }
+                self.RemoveList = function (codigo) {
+
+                    if (localStorage.getItem('listadecompra1') == null || localStorage.getItem('listadecompra1') == undefined) {
+                        console.log('nada')
+                        alert('Não tem nada na lista')
+                    } else {
+                        var coma = localStorage.getItem('listadecompra1')
+                        uns = JSON.parse(coma)
+                        if (Object.keys(uns).includes(codigo)) {
+                            console.log(uns, 'uns')
+                            delete uns[codigo]
+                            self.removeCards(codigo)
+                            console.log(uns, 'coma2')
+                            var newCompra = JSON.stringify(uns)
+                            localStorage.setItem('listadecompra1', newCompra);
+                            console.log(localStorage)
+                            // $('.nana').html("import turtle\n\n\n\n\ndef draw_map():\n\n\tdata = 'UP;-150 25;CIRCLE_START;-100 200;FILL_START;-100 200;-100 50;-150 50;-150 200;FILL_END;-50 200;FILL_START;0 200;0 50;-50 50;-50 200;FILL_END;50 200;FILL_START;100 200;100 50;50 50;50 200;FILL_END;-150 0;FILL_START;-100 0;-100 -150;-150 -150;-150 0;FILL_END;-50 0;FILL_START;0 0;0 -150;-50 -150;-50 0;FILL_END;50 0;FILL_START;100 0;100 -150;50 -150;50 0;FILL_END;100 25;CIRCLE_START'\n\n\tt.speed(200)\n\n\tfor a in data.split(';'):\n\t\t\n\t\tt.pencolor('black')\n\n\t\tif a == 'UP':\n\t\t\tt.up()\n\t\telif a == 'CIRCLE_START':\n\t\t\tt.pencolor('red')\n\t\t\tt.dot(20)\n\t\t# elif a == 'CIRCLE_WAYPOINT':\n\t\t#     t.pencolor('white')\n\t\t#     t.dot(20)\n\t\telif a == 'FILL_START':\n\t\t\tt.begin_fill()\n\t\telif a == 'FILL_END':\n\t\t\tt.end_fill()\n\t\t\t# elif a[0]=='SECTION':\n\t\t\t#     t.pencolor('black')\n\t\t\t#     # t.write(\"seccao\",align='center',font=('Arial', 16, 'normal'))\n\t\telse:\n\n\t\t\ti = a.split(' ')\n\t\t\tt.goto(int(i[0]), int(i[1]))\n\n\ndef draw_products(lista_locais):\n\tt.speed(20)\n\tfor item in compras:\n\t\tfor code in produtos:\n\t\t\tif item == code:\n\t\t\t\tlocal_x = produtos[code][4]\n\t\t\t\tlocal_y = produtos[code][5]\n\t\t\t\tt.goto(local_x, local_y)\n\t\t\t\tt.pencolor('blue')\n\t\t\t\tt.dot(15)\n\t\t\t\tlista_locais.append((local_x, local_y))\n\treturn lista_locais\n\n\ndef draw_line(lista_locais):\n\t# a lista -125 tem elementos ? se sim qual deles está mais proximo, e agora qual existem mais algum elemento na lista se sim, qual está mais proximo, se nao vai para o way point, repete\n\tt.speed(20)\n\t\t\n\twaypoint = {}\n\twaypoint[-150] = {local[1] for local in lista_locais if local[0] == -150}\n\twaypoint[-100] = {local[1] for local in lista_locais if local[0] == -100}\n\twaypoint[-50] = {local[1] for local in lista_locais if local[0] == -50}\n\twaypoint[0] = {local[1] for local in lista_locais if local[0] == 0}\n\twaypoint[50] = {local[1] for local in lista_locais if local[0] == 50}\n\twaypoint[100] = {local[1] for local in lista_locais if local[0] == 100}\n\twaypoint[150] = {local[1] for local in lista_locais if local[0] == 150}\n\n\twaypoint_sorted = dict(sorted(waypoint.items()))\n\t\n\tt.pensize(5)\n\tt.goto(-150, 25)\n\tt.down()\n\tt.goto(-150, 25)\n\n\tfor local in waypoint_sorted:\n\t\tif len(waypoint_sorted[local]) != 0:\n\t\t\tt.goto(local, 25)\n\n\t\t\tdistancia_max = max(waypoint_sorted[local])\n\t\t\tdistancia_min = min(waypoint_sorted[local])\n\n\t\t\tif distancia_max > 0:\n\t\t\t\tt.goto(local, distancia_max)\n\t\t\t\tt.goto(local, 25)\n\t\t\tif distancia_min < 0:\n\t\t\t\tt.goto(local, distancia_min)\n\t\t\t\tt.goto(local, 25)\n\n\n\nprodutos = {   'p1': ('Ketchup', 'Mercearia Salgado', 1.59, 0.23, -150, 56),                                                \n\t'p10': ('Leite 6x1L', 'Lacticinios', 4.92, 0.06, -50, 58),                                                   \n\t'p11': ('Natas', 'Lacticinios', 0.79, 0.06, -50, 87),\n\t'p12': ('Ovos', 'Lacticinios', 0.94, 0.06, -50, 110),\n\t'p13': ('Espadarte Posta', 'Peixaria', 6.49, 0.06, -50, -140),\n\t'p14': ('Queijo', 'Charcutaria', 3.89, 0.06, 0, -80),\n\t'p15': ('Laranjas', 'Frutas e Legumes', 1.449, 0.06, 50, -40),\n\t'p16': ('Ameixa Seca', 'Frutas e Legumes', 2.0, 0.06, 50, -70),\n\t'p17': ('Tabuleiro', 'Casa', 7.0, 0.23, 100, -60),\n\t'p18': ('Batatas', 'Frutas e Legumes', 17.0, 0.06, 50, -130),\n\t'p19': ('Limpa Vidros', 'Limpeza', 3.69, 0.23, 100, 140),\n\t'p2 ': ('Atum', 'Mercearia Salgado', 3.38, 0.06, -150, 80),\n\t\"p20\": ('Oregaos', 'Mercearia Salgado', 1.42, 0.06, -150, 120),\n\t'p21': ('Bolachas Maria', 'Mercearia Doce', 2.39, 0.23, -100, 140),\n\t'p22': ('Pedras Salgadas', 'Bebidas', 2.46, 0.13, -150, -80),\n\t'p23': ('Detergente Roupa', 'Limpeza', 12.99, 0.23, 100, 120),\n\t'p24': ('Iogurte Grego', 'Lacticinios', 2.59, 0.06, -50, 130),\n\t'p3': ('Cogumelos', 'Mercearia Salgado', 1.98, 0.23, -150, 95),\n\t'p4': ('Bolachas Cacau', 'Mercearia Doce', 1.39, 0.23, -100, 60),\n\t'p5': ('Cerelac', 'Mercearia Doce', 5.65, 0.06, -100, 100),\n\t'p6': ('Heineken 12x25CL', 'Bebidas', 8.99, 0.23, -150, -130),\n\t'p7': ('Gel Banho', 'Higiene', 5.99, 0.23, 100, 130),\n\t'p8': ('Lencos de Bolso', 'Limpeza', 1.59, 0.23, 100, 60),\n\t'p9': ('Jardineira', 'Congelados', 1.99, 0.06, -50, -70)}\n\n\n\n\n\t\t\t\t\t\n\n\n\ncompras =" + newCompra + "\n\n\nt = turtle.Turtle()\nlista_locais = []\n\nturtle.Screen().bgcolor('#BBBFCA')\n\n# t.speed(100)\ndraw_map()\ndraw_products(lista_locais)\ndraw_line(lista_locais)\n\n\t\n\nturtle.Screen().exitonclick()");
+                        } else {
+                            alert("Produto não está no carrinho");
+                        }
+
+
+
+
+                    }
+                }
+            }
+
+            $(document).ready(function () {
+                ko.applyBindings(new myviewmodel());
+                //aqui quero adicionar um produto à minha lista de compras
+                // localStorage.clear();
+
+
+
+                //ideias//
+                //VIOLETA quero que guardes os produtos no local storage e que faças um botao noutra pagina que mostre os produtos guardados faz com uma variavel global
+                // e por favor faz com que os buttons funcionem
+                // quero que o butao esteja destivado ate que o utilizador o adicione ao carrinho
+                //fim ideias//
+                //no shit//
+            })
+        </script>
+
+        <!-- Bootstrap JavaScript Libraries -->
+
+
+
+
+        <script>
+
+            $(document).ready(function () {
+                $("#add").click(function () {
+
+                    alert("The paragraph was clicked.");
+                });
+                var availableTags = {
+                    "Ketchup": 'p1',
+                    "Atum": 'p2',
+                    "Cogumelos": 'p3',
+                    "Bolachas Cacau": 'p4',
+                    "Cerelac": 'p5',
+                    "Heineken": 'p6',
+                    "Gel de Banho": 'p7',
+                    "Lenços de Bolso": 'p8',
+                    "Jardineira": 'p9',
+                    "Leite": 'p10',
+                    "Natas": 'p11',
+                    "Ovos": 'p12',
+                    "Espadarte Posta": 'p13',
+                    "Queijo": 'p14',
+                    "Laranjas": 'p15',
+                    "Ameixa Seca": 'p16',
+                    "Tabuleiro": 'p17',
+                    "Batatas": 'p18',
+                    "Limpa Vidros": 'p19',
+                    "Oregãos": 'p20',
+                    "Bolachas Maria": 'p21',
+                    "Pedras Salgadas": 'p22',
+                    "Detergente Roupa": 'p23',
+                    "Iogurte Grego": 'p24'
+                };
+                var availableTagsAC = [
+                    "Ketchup",
+                    "Atum",
+                    "Cogumelos",
+                    "Bolachas Cacau",
+                    "Cerelac",
+                    "Heineken",
+                    "Gel de Banho",
+                    "Lenços de Bolso",
+                    "Jardineira",
+                    "Leite",
+                    "Natas",
+                    "Ovos",
+                    "Espadarte Posta",
+                    "Queijo",
+                    "Laranjas",
+                    "Ameixa Seca",
+                    "Tabuleiro",
+                    "Batatas",
+                    "Limpa Vidros",
+                    "Oregãos",
+                    "Bolachas Maria",
+                    "Pedras Salgadas",
+                    "Detergente Roupa",
+                    "Iogurte Grego"
+                ];
+                $("#tags").autocomplete({
+                    source: availableTagsAC
+                });
+                const comprar = {}
+                $('#btn-srch').click(function () {
+                    var produto = $("#tags").val();
+                    quantidade = 1;
+                    var p = availableTags[produto];
+                    comprar[p] = quantidade;
+                    console.log(comprar)
+                    var comp1 = JSON.stringify(comprar)
+                    console.log(comp1)
+                    console.log(JSON.stringify(produto), '###########')
+                    // $('.nana').html("\nimport turtle\n\n\n\n\ndef draw_map():\n\n    data = 'UP;-150 25;CIRCLE_START;-100 200;FILL_START;-100 200;-100 50;-150 50;-150 200;FILL_END;-50 200;FILL_START;0 200;0 50;-50 50;-50 200;FILL_END;50 200;FILL_START;100 200;100 50;50 50;50 200;FILL_END;-150 0;FILL_START;-100 0;-100 -150;-150 -150;-150 0;FILL_END;-50 0;FILL_START;0 0;0 -150;-50 -150;-50 0;FILL_END;50 0;FILL_START;100 0;100 -150;50 -150;50 0;FILL_END;100 25;CIRCLE_START'\n\n    t.speed(200)\n\n    for a in data.split(';'):\n        \n        t.pencolor('black')\n\n        if a == 'UP':\n            t.up()\n        elif a == 'CIRCLE_START':\n            t.pencolor('red')\n            t.dot(20)\n        # elif a == 'CIRCLE_WAYPOINT':\n        #     t.pencolor('white')\n        #     t.dot(20)\n        elif a == 'FILL_START':\n            t.begin_fill()\n        elif a == 'FILL_END':\n            t.end_fill()\n            # elif a[0]=='SECTION':\n            #     t.pencolor('black')\n            #     # t.write(\"seccao\",align='center',font=('Arial', 16, 'normal'))\n        else:\n\n            i = a.split(' ')\n            t.goto(int(i[0]), int(i[1]))\n\n\ndef draw_products(lista_locais):\n    t.speed(20)\n    for item in compras:\n        for code in produtos:\n            if item == code:\n                local_x = produtos[code][4]\n                local_y = produtos[code][5]\n                t.goto(local_x, local_y)\n                t.pencolor('blue')\n                t.dot(15)\n                lista_locais.append((local_x, local_y))\n    return lista_locais\n\n\ndef draw_line(lista_locais):\n    # a lista -125 tem elementos ? se sim qual deles está mais proximo, e agora qual existem mais algum elemento na lista se sim, qual está mais proximo, se nao vai para o way point, repete\n    t.speed(20)\n     \n    waypoint = {}\n    waypoint[-150] = {local[1] for local in lista_locais if local[0] == -150}\n    waypoint[-100] = {local[1] for local in lista_locais if local[0] == -100}\n    waypoint[-50] = {local[1] for local in lista_locais if local[0] == -50}\n    waypoint[0] = {local[1] for local in lista_locais if local[0] == 0}\n    waypoint[50] = {local[1] for local in lista_locais if local[0] == 50}\n    waypoint[100] = {local[1] for local in lista_locais if local[0] == 100}\n    waypoint[150] = {local[1] for local in lista_locais if local[0] == 150}\n\n    waypoint_sorted = dict(sorted(waypoint.items()))\n    \n    t.pensize(5)\n    t.goto(-150, 25)\n    t.down()\n    t.goto(-150, 25)\n\n    for local in waypoint_sorted:\n        if len(waypoint_sorted[local]) != 0:\n            t.goto(local, 25)\n\n            distancia_max = max(waypoint_sorted[local])\n            distancia_min = min(waypoint_sorted[local])\n\n            if distancia_max > 0:\n                t.goto(local, distancia_max)\n                t.goto(local, 25)\n            if distancia_min < 0:\n                t.goto(local, distancia_min)\n                t.goto(local, 25)\n\n\n\nprodutos = {   'p1': ('Ketchup', 'Mercearia Salgado', 1.59, 0.23, -150, 56),                                                \n    'p10': ('Leite 6x1L', 'Lacticinios', 4.92, 0.06, -50, 58),                                                   \n    'p11': ('Natas', 'Lacticinios', 0.79, 0.06, -50, 87),\n    'p12': ('Ovos', 'Lacticinios', 0.94, 0.06, -50, 110),\n    'p13': ('Espadarte Posta', 'Peixaria', 6.49, 0.06, -50, -140),\n    'p14': ('Queijo', 'Charcutaria', 3.89, 0.06, 0, -80),\n    'p15': ('Laranjas', 'Frutas e Legumes', 1.449, 0.06, 50, -40),\n    'p16': ('Ameixa Seca', 'Frutas e Legumes', 2.0, 0.06, 50, -70),\n    'p17': ('Tabuleiro', 'Casa', 7.0, 0.23, 100, -60),\n    'p18': ('Batatas', 'Frutas e Legumes', 17.0, 0.06, 50, -130),\n    'p19': ('Limpa Vidros', 'Limpeza', 3.69, 0.23, 100, 140),\n    'p2 ': ('Atum', 'Mercearia Salgado', 3.38, 0.06, -150, 80),\n    \"p20\": ('Oregaos', 'Mercearia Salgado', 1.42, 0.06, -150, 120),\n    'p21': ('Bolachas Maria', 'Mercearia Doce', 2.39, 0.23, -100, 140),\n    'p22': ('Pedras Salgadas', 'Bebidas', 2.46, 0.13, -150, -80),\n    'p23': ('Detergente Roupa', 'Limpeza', 12.99, 0.23, 100, 120),\n    'p24': ('Iogurte Grego', 'Lacticinios', 2.59, 0.06, -50, 130),\n    'p3': ('Cogumelos', 'Mercearia Salgado', 1.98, 0.23, -150, 95),\n    'p4': ('Bolachas Cacau', 'Mercearia Doce', 1.39, 0.23, -100, 60),\n    'p5': ('Cerelac', 'Mercearia Doce', 5.65, 0.06, -100, 100),\n    'p6': ('Heineken 12x25CL', 'Bebidas', 8.99, 0.23, -150, -130),\n    'p7': ('Gel Banho', 'Higiene', 5.99, 0.23, 100, 130),\n    'p8': ('Lencos de Bolso', 'Limpeza', 1.59, 0.23, 100, 60),\n    'p9': ('Jardineira', 'Congelados', 1.99, 0.06, -50, -70)}\n\n\n\n\n                    \n\n\n\ncompras =" + comp1 + "\n\n\nt = turtle.Turtle()\nlista_locais = []\nturtle.Screen().setup(360, 740)\n# turtle.screensize(canvwidth=360, canvheight=740)\n# t.speed(100)\ndraw_map()\ndraw_products(lista_locais)\ndraw_line(lista_locais)\n\n    \n\nturtle.Screen().exitonclick()\n");
+                    $("#nameprod").toggleClass("d-none");
+                    $('#prodPriceZone').text(produto);
+                    $('#prodImgZone').append("<img src='Produtos/" + p + ".png' class=' col-12 prodImg' alt='Responsive image'>");
+                    return comp1;
+                });
+
+
+
+
+
+
+
+
+
+            });
+
+        </script>
+
+</body>
+
+</html>

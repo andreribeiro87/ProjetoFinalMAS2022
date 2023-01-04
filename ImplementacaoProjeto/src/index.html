@@ -30,9 +30,18 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    body {
+      background-color: rgb(210, 210, 210);
+    }
+
+    .altura {
+      height: 25vh;
+    }
+
     button {
       border: 0 !important;
       background-color: transparent !important;
+      background-color: brown;
     }
   </style>
 
@@ -54,15 +63,24 @@
           <ul class="navbar navbar-expand-sm navbar-light nv mb-2">
             <!-- <li class="nav-item "> -->
             <a class="nav-link active" href="#" aria-current="page">
-              <i class="fa fa-o fa-shopping-cart"></i> Produtos<span class="visually-hidden">(current)</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                class="bi bi-shop-window " viewBox="0 0 16 20">
+                <path
+                  d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
+              </svg> Produtos<span class="visually-hidden">(current)</span>
             </a>
-            <a class="nav-link active" href="#"> Lista de compras</a>
-            <a class="nav-link active" href="caminhoProdutos.html"> Caminho</a>
-            <!-- </li> -->
-            <!-- <li class="nav-item">
-            </li>
-            <li class="nav-item">
-            </li> -->
+            <a class="nav-link active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                fill="currentColor" class="bi bi-bag" viewBox="0 0 16 20">
+                <path
+                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+              </svg> Lista de compras</a>
+            <a class="nav-link active" href="caminhoProdutos.html"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 20">
+                <path
+                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg> Caminho</a>
+
 
           </ul>
 
@@ -75,8 +93,15 @@
   <div class="container">
     <div class="row">
       <form class="d-flex my-2 my-lg-0 ui-widget">
-        <input class="col-10 me-1 border rounded-5 " type="text" autocomplete="on" id="tags" placeholder="     Search">
-        <input type="button" class=" col-2  my-0 imgbtn" id="btn-srch" alt="Search">
+        <input class="col-10 me-1 border rounded-5 border-light" type="text" autocomplete="on" id="tags"
+          placeholder="     Search">
+        <button id="btn-srch" alt="Search" class="col-2  my-0 border border-light border-3 text-bg-light"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg></button>
+
       </form>
     </div>
     <div class="row d-none mt-1 mb-3 pd" id="nameprod">
@@ -100,13 +125,13 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img src="../images/pub1auchan.jpg" class="w-100 d-block" alt="First slide">
+        <img src="../images/pub1auchan.jpg" class="w-100 d-block altura" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img src="../images/pub2auchan.jpg" class="w-100 d-block" alt="Second slide">
+        <img src="../images/pub2auchan.jpg" class="w-100 d-block altura" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img src="../images/pub3auchan.jpg" class="w-100 d-block" alt="Third slide">
+        <img src="../images/pub3auchan.jpg" class="w-100 d-block altura" alt="Third slide">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">

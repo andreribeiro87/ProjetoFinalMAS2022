@@ -19,7 +19,6 @@
 	<link href="../lib/css/bootstrap.min.css" rel="stylesheet">
 	<!-- <link href="fa.min.css" rel="stylesheet" /> -->
 	<link href="../lib/css/lineicons.css" rel="stylesheet">
-	<link rel="stylesheet" href="jquery-ui.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +43,7 @@
 
 		.window-container {
 			background-color: #E8E8E8;
+			margin: 0 !important;
 		}
 
 		.bt {
@@ -64,6 +64,18 @@
 			border: transparent !important;
 			border-radius: 50px !important;
 
+		}
+
+		.teste {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.page-header {
+			padding-bottom: 0 !important;
+			margin: 42px 0px 0px !important;
+			border-bottom: 0px solid #ebebeb !important;
 		}
 	</style>
 
@@ -120,7 +132,6 @@
 
 	<script src="../lib/js/skulpt-stdlib.js"></script>
 
-	<link rel="stylesheet" href="../lib/css/jquery-ui.css">
 
 
 
@@ -144,25 +155,39 @@
 <body>
 	<nav class="navbar navbar-expand-sm navbar-light nv mb-2">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img class="logotipo" src="../images/logoFindIt.png"></a>
-			<button class="navbar-toggler d-lg-none btn btn-primary" type="button" data-bs-toggle="collapse"
-				data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<div class="w-100 teste">
+				<div><a class="navbar-brand" href="#"><img class="logotipo" src="../images/logoFindIt.png"></a></div>
+				<div>
+					<button class="navbar-toggler d-lg-none btn btn-primary" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</div>
+
 			<div class="collapse navbar-collapse" id="collapsibleNavId">
 				<ul class="navbar navbar-expand-sm navbar-light nv mb-2">
 					<!-- <li class="nav-item "> -->
 					<a class="nav-link active" href="#" aria-current="page">
-						<i class="fa fa-o fa-shopping-cart"></i> Produtos<span class="visually-hidden">(current)</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+							class="bi bi-shop-window " viewBox="0 0 16 20">
+							<path
+								d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z" />
+						</svg> Produtos<span class="visually-hidden">(current)</span>
 					</a>
-					<a class="nav-link active" href="#"> Lista de compras</a>
-					<a class="nav-link active" href="caminhoProdutos.html"> Caminho</a>
-					<!-- </li> -->
-					<!-- <li class="nav-item">
-			  </li>
-			  <li class="nav-item">
-			  </li> -->
+					<a class="nav-link active" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+							fill="currentColor" class="bi bi-bag" viewBox="0 0 16 20">
+							<path
+								d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+						</svg> Lista de compras</a>
+					<a class="nav-link active" href="caminhoProdutos.html"><svg xmlns="http://www.w3.org/2000/svg"
+							width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 20">
+							<path
+								d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+							<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+						</svg> Caminho</a>
+
 
 				</ul>
 
@@ -181,10 +206,7 @@
 		gtag('config', 'UA-10538200-12');
 	</script>
 	<div class="page-content">
-
-
 		<div class="page-header">
-
 			<form method="POST" action="https://www.pythonsandbox.com/code" accept-charset="UTF-8"><input name="_token"
 					type="hidden" value="ZWgoZaTTviITuwY57S5MPcCR0LroyUi5TAb8ISxs">
 				<input name="mode" type="hidden" value="turtle">
@@ -192,21 +214,11 @@
 				<input name="save-as-last" type="hidden" value="0">
 				<input name="save-as-new" type="hidden" value="0">
 				<div class="container">
-
-
-
-
-
 					<div class="row">
-
 						<div class="">
-
 							<div class="row">
-
 								<div class="d-none ">
-
 									<p class="lead"></p>
-
 									<textarea id="sandbox" class="nana">
 
 
@@ -328,7 +340,7 @@ produtos = {   'p1': ('Ketchup', 'Mercearia Salgado', 1.59, 0.23, -150, 56),
 
 
 
-compras = {'p20':1, 'p10':1, 'p15':1, 'p8':1,'p13':1}
+compras = {}
 
 
 t = turtle.Turtle()
@@ -343,25 +355,16 @@ draw_line(lista_locais)
 	
 
 turtle.Screen().exitonclick()
-									
-									
-																		
 									</textarea>
-
-
 								</div>
-
-
-
 							</div>
-
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-12 window-container">
 
 							<div class="col-12">
-								<div id="canvas"></div>
+								<div id="canvas" class="border rounded-3"></div>
 								<pre class="hidden no-show" id="output"></pre>
 								<button type="button" class="btncaminho p-3 runner mt-2">Caminho</button>
 							</div>
@@ -406,16 +409,22 @@ turtle.Screen().exitonclick()
 			</div>
 
 		</div> -->
-		<div class="row">
-			<div class="ui-widget">
-				<input type="text" id="tags" class="col-9 border rounded-5 p-2 ms-3" placeholder="    Adicione ">
+		<div class="container mt-3">
+			<div class="row justify-content-center text-center">
 
-				<button class="btn btn-primary bt txtbtn col-2 py-2 pt-3" id="btn-add1">Add</button>
+				<input type="text" id="tags" class="col-7 border  rounded-5 ps-4 " placeholder="Adicione ">
+
+				<button title="search" class="col-2  bt txtbtn " id="btn-add1" style="background-color: #495464;"><i
+						class="fa fa-plus"></i></button>
+				<button title="search" class="col-2  bt txtbtn " id="btn-add2" style="background-color: #495464;"><i
+						class="fa fa-car"></i></button>
+				<button title="search" onclick="localStorage.clear()" class="col-2  bt txtbtn " id="btn-add2"
+					style="background-color: #495464;"><i class="fa fa-stop"></i></button>
 				<!-- <button class="btn btn-primary" id="btn-ht">change html</button> -->
+
 
 			</div>
 		</div>
-
 
 
 		<!-- Bootstrap JavaScript -->

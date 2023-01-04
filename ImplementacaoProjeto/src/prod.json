@@ -1,0 +1,220 @@
+{
+    "produto": [
+        {
+            "codigo": "p1",
+            "nome": "Ketchup",
+            "localizacao": "Mercearia Salgado",
+            "preco": 1.59,
+            "iva": 0.23,
+            "locaX": -150,
+            "locaY": 56
+        },
+        {
+            "codigo": "p10",
+            "nome": "Leite 6x1L",
+            "localizacao": "Lacticinios",
+            "preco": 4.92,
+            "iva": 0.06,
+            "locaX": -50,
+            "locaY": 58
+        },
+        {
+            "codigo": "p11",
+            "nome": "Natas",
+            "localizacao": "Lacticinios",
+            "preco": 0.79,
+            "iva": 0.06,
+            "locaX": -50,
+            "locaY": 87
+        },
+        {
+            "codigo": "p12",
+            "nome": "Ovos",
+            "localizacao": "Lacticinios",
+            "preco": 0.94,
+            "iva": 0.06,
+            "locaX": -50,
+            "locaY": 110
+        },
+        {
+            "codigo": "p13",
+            "nome": "Espadarte Posta",
+            "localizacao": "Peixaria",
+            "preco": 6.49,
+            "iva": 0.06,
+            "locaX": -50,
+            "locaY": -140
+        },
+        {
+            "codigo": "p14",
+            "nome": "Queijo",
+            "localizacao": "Charcutaria",
+            "preco": 3.89,
+            "iva": 0.06,
+            "locaX": 0,
+            "locaY": -80
+        },
+        {
+            "codigo": "p15",
+            "nome": "Laranjas",
+            "localizacao": "Frutas e Legumes",
+            "preco": 1.449,
+            "iva": 0.06,
+            "locaX": 50,
+            "locaY": -40
+        },
+        {
+            "codigo": "p16",
+            "nome": "Ameixa Seca",
+            "localizacao": "Frutas e Legumes",
+            "preco": 2.0,
+            "iva": 0.06,
+            "locaX": 50,
+            "locaY": -70
+        },
+        {
+            "codigo": "p17",
+            "nome": "Tabuleiro",
+            "localizacao": "Casa",
+            "preco": 7.0,
+            "iva": 0.23,
+            "locaX": 100,
+            "locaY": -60
+        },
+        {
+            "codigo": "p18",
+            "nome": "Batatas",
+            "localizacao": "Frutas e Legumes",
+            "preco": 17.0,
+            "iva": 0.06,
+            "locaX": 50,
+            "locaY": -130
+        },
+        {
+            "codigo": "p19",
+            "nome": "Limpa Vidros",
+            "localizacao": "Limpeza",
+            "preco": 3.69,
+            "iva": 0.23,
+            "locaX": 100,
+            "locaY": 140
+        },
+        {
+            "codigo": "p2",
+            "nome": "Atum",
+            "localizacao": "Mercearia Salgado",
+            "preco": 3.38,
+            "iva": 0.06,
+            "locaX": -150,
+            "locaY": 80
+        },
+        {
+            "codigo": "p20",
+            "nome": "Oregaos",
+            "localizacao": "Mercearia Salgado",
+            "preco": 1.42,
+            "iva": 0.06,
+            "locaX": -150,
+            "locaY": 120
+        },
+        {
+            "codigo": "p21",
+            "nome": "Bolachas Maria",
+            "localizacao": "Mercearia Doce",
+            "preco": 2.39,
+            "iva": 0.23,
+            "locaX": -100,
+            "locaY": 140
+        },
+        {
+            "codigo": "p22",
+            "nome": "Pedras Salgadas",
+            "localizacao": "Bebidas",
+            "preco": 2.46,
+            "iva": 0.13,
+            "locaX": -150,
+            "locaY": -80
+        },
+        {
+            "codigo": "p23",
+            "nome": "Detergente Roupa",
+            "localizacao": "Limpeza",
+            "preco": 12.99,
+            "iva": 0.23,
+            "locaX": 100,
+            "locaY": 120
+        },
+        {
+            "codigo": "p24",
+            "nome": "Iogurte Grego",
+            "localizacao": "Lacticinios",
+            "preco": 2.59,
+            "iva": 0.06,
+            "locaX": -50,
+            "locaY": 130
+        },
+        {
+            "codigo": "p3",
+            "nome": "Cogumelos",
+            "localizacao": "Mercearia Salgado",
+            "preco": 1.98,
+            "iva": 0.23,
+            "locaX": -150,
+            "locaY": 95
+        },
+        {
+            "codigo": "p4",
+            "nome": "Bolachas Cacau",
+            "localizacao": "Mercearia Doce",
+            "preco": 1.39,
+            "iva": 0.23,
+            "locaX": -100,
+            "locaY": 60
+        },
+        {
+            "codigo": "p5",
+            "nome": "Cerelac",
+            "localizacao": "Mercearia Doce",
+            "preco": 5.65,
+            "iva": 0.06,
+            "locaX": -100,
+            "locaY": 100
+        },
+        {
+            "codigo": "p6",
+            "nome": "Heineken 12x25CL",
+            "localizacao": "Bebidas",
+            "preco": 8.99,
+            "iva": 0.23,
+            "locaX": -150,
+            "locaY": -130
+        },
+        {
+            "codigo": "p7",
+            "nome": "Gel Banho",
+            "localizacao": "Higiene",
+            "preco": 5.99,
+            "iva": 0.23,
+            "locaX": 100,
+            "locaY": 130
+        },
+        {
+            "codigo": "p8",
+            "nome": "Lencos de Bolso",
+            "localizacao": "Limpeza",
+            "preco": 1.59,
+            "iva": 0.23,
+            "locaX": 100,
+            "locaY": 60
+        },
+        {
+            "codigo": "p9",
+            "nome": "Jardineira",
+            "localizacao": "Congelados",
+            "preco": 1.99,
+            "iva": 0.06,
+            "locaX": -50,
+            "locaY": -70
+        }
+    ]
+}
