@@ -102,7 +102,7 @@
     </div>
     <div class="row mt-1 d-none mb-3 pd" id="nameprod">
       <div class="col-9 mt-2" id="prodPriceZone"></div>
-      <div class="col-3 mt-1"><button class="btn btn-primary" id="add">Adiciona</button></div>
+      <div class="col-3 mt-1"><button class="btn text-bg-dark btn-primary" id="add">Adiciona</button></div>
       <div class="col-12 mt-2" id="prodImgZone"></div>
 
       <div class="col-12" id="local">local</div>
@@ -300,7 +300,9 @@
         $("#nameprod").toggleClass("d-none");
         $('#prodPriceZone').text(produto);
         $('#prodImgZone').append("<img src='../images/" + p + ".png' class=' col-12 prodImg' alt='Responsive image'>");
+
       });
+
       $('#add').click(function () {
         var produto = $("#tags").val();
 
